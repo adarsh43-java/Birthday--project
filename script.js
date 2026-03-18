@@ -6,6 +6,11 @@ function celebrate() {
   });
 }
 
+function playMusic() {
+  let music = document.getElementById("bgMusic");
+  music.play();
+}
+
 let yourName = "Adarsh";
 let friendName = "Akash Yadav";
 
@@ -13,7 +18,3 @@ document.getElementById("name").innerText = friendName;
 
 document.querySelector(".message").innerText =
   `Happy Birthday ${friendName}! 🎉 From your friend ${yourName} 💖`;
-
-setTimeout(() => {
-  celebrate();
-}, 1000);
